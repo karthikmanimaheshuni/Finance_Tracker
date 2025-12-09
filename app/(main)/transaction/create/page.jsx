@@ -1,3 +1,7 @@
+//export const runtime = "nodejs"; 
+//export const dynamic = "force-dynamic";
+
+
 import { getUserAccounts } from "@/actions/dashboard";
 import { defaultCategories } from "@/data/categories";
 import { AddTransactionForm } from "../_components/transaction-form";

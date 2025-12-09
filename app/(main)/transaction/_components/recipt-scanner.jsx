@@ -21,8 +21,9 @@ export function ReceiptScanner({ onScanComplete }) {
       toast.error("File size should be less than 5MB");
       return;
     }
-
-    await scanReceiptFn(file);
+    const form = new FormData();
+    form.append("file", file);
+    await scanReceiptFn(form);
   };
 
   useEffect(() => {
